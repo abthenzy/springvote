@@ -1,0 +1,11 @@
+用户表users：  uid  username    password    status
+主题表subject：sid  title       type(1,2)
+选项表options：oid  content     o_sid
+投票表vote：   vid  v_sid(sid)  v_oid(oid)  v_uid(uid) (用户和选项的中间表)
+
+
+1、注册、登录
+2、主页显示(查询所有主题，每个主题选项数和投票数)
+3、投票(每个用户一个主题只能投一次)
+4、新增投票
+5、维护投票(删除主题，新增选项、删除选项、修改选项)

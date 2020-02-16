@@ -1,0 +1,23 @@
+server:
+  servlet:
+    context-path: /springvote
+    port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///springvote?serverTimezone=UTC&useUnicode=true&charactorEncoding=UTF-8
+    username: abthen
+    password: abthen@180
+
+mybatis-plus:
+  type-aliases-package: com.ab.springvote.pojo
+  configuration:
+    auto-mapping-behavior: full
+    use-generated-keys: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+
+thymeleaf:
+    encoding: UTF-8
+    cache: false

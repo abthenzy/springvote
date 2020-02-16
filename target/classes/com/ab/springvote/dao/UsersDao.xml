@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--登录验证-->
+<mapper namespace="com.ab.springvote.dao.UsersDao">
+    <select id="findUser" resultType="java.lang.Integer" parameterType="com.ab.springvote.pojo.Users">
+        select count(*) from users
+        where username=#{username,jdbcType=VARCHAR} and upassword=#{upassword}
+    </select>
+
+    <select id="findAll" resultType="com.ab.springvote.pojo.Users">
+        select * from users;
+    </select>
+
+    <insert  id="insertUser" parameterType="Users" useGeneratedKeys="true" keyProperty="uid">
+        insert into users(uid,username,upassword,ustatus) values (null,#{username},#{upassword},#{ustatus})
+    </insert>
+
+    <delete id="deleteUser" parameterType="Users">
+        DELETE FROM users WHERE username=#{username}
+    </delete>
+        <!--根据用户名修改某用户名下的密码或者身份-->
+    <update id="update" parameterType="Users">
+        UPDATE users SET upassword=#{upassword}, ustatus=#{ustatus} WHERE username=#{username}
+    </update>
+</mapper>
