@@ -64,11 +64,13 @@ public class TestController {
     @RequestMapping("addbyplus")
     private String addUsersbyPlus(){
         Users u=new Users();
-        u.setUsername("CARROTZY");
-        u.setUpassword("carrot@180");
+        u.setUsername("nancy");
+        u.setUpassword("nancy1999");
         u.setUstatus(1);
         usersService.save(u);
         System.out.println(u.getUid());
+        List<Users> users=usersService.list();
+        System.out.println(users);
         return "test";
     }
 
