@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="390ced8b-0bbc-4ec5-b33f-6480d814494c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springvote.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ab/springvote/controllers/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ab/springvote/controllers/TestController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +95,7 @@
       <workItem from="1581813433140" duration="2812000" />
       <workItem from="1581899301432" duration="140000" />
       <workItem from="1581899460108" duration="930000" />
-      <workItem from="1581907350191" duration="20124000" />
+      <workItem from="1581907350191" duration="25410000" />
     </task>
     <servers />
   </component>
